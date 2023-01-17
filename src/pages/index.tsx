@@ -1,71 +1,80 @@
+import { Card, Carousel } from 'flowbite-react';
+import Image from 'next/image';
 import * as React from 'react';
 
 import Layout from '@/components/layout/Layout';
-import ArrowLink from '@/components/links/ArrowLink';
-import ButtonLink from '@/components/links/ButtonLink';
-import UnderlineLink from '@/components/links/UnderlineLink';
-import UnstyledLink from '@/components/links/UnstyledLink';
 import Seo from '@/components/Seo';
-
-/**
- * SVGR Support
- * Caveat: No React Props Type.
- *
- * You can override the next-env if the type is important to you
- * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
- */
-import Vercel from '~/svg/Vercel.svg';
-
-// !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
-// Before you begin editing, follow all comments with `STARTERCONF`,
-// to customize the default configuration.
 
 export default function HomePage() {
   return (
     <Layout>
-      {/* <Seo templateTitle='Home' /> */}
+      <Seo templateTitle='Home' />
       <Seo />
 
       <main>
         <section className='bg-white'>
-          <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
-            <Vercel className='text-5xl' />
-            <h1 className='mt-4'>
-              Next.js + Tailwind CSS + TypeScript Starter
-            </h1>
-            <p className='mt-2 text-sm text-gray-800'>
-              A starter for Next.js, Tailwind CSS, and TypeScript with Absolute
-              Import, Seo, Link component, pre-configured with Husky{' '}
-            </p>
-            <p className='mt-2 text-sm text-gray-700'>
-              <ArrowLink href='https://github.com/theodorusclarence/ts-nextjs-tailwind-starter'>
-                See the repository
-              </ArrowLink>
-            </p>
+          <div className='layout flex flex-col'>
+            <div className='mt-16 rounded'>
+              <h1 className='text-md self-center text-center md:text-5xl'>
+                Quality education made
+                <span className='bg-gradient-to-r from-primary-500 to-yellow-500 bg-clip-text text-transparent '>
+                  {' '}
+                  more accessible
+                </span>
+              </h1>
+              <p className='text-grey self-center px-8 pt-5 text-center text-justify text-xs md:text-center md:text-xl'>
+                Providing a strategic, relevant and flexible educational program
+                that pursue excellence, uphold values and responds positively to
+                the needs of society in times of global crisis.
+              </p>
+            </div>
+            <div className='my-16 h-56 rounded sm:h-64 xl:h-80 2xl:h-96'>
+              <Carousel className='rounded shadow-lg'>
+                <Image
+                  alt='...'
+                  src='https://saintmarysangels.edu.ph/storage/smac-files/jIdPDnijIWCvErfuTrCzdZjpHNT5TRhgO1v36A9H.gif'
+                />
+                <Image
+                  src='https://saintmarysangels.edu.ph/storage/smac-files/j1y8Cs1jJNrqfWss7F11XXUeZ4QG9cMAIS8YdHDj.png'
+                  alt='home_page_banner'
+                />
+                <Image
+                  alt='...'
+                  src='https://saintmarysangels.edu.ph/storage/smac-files/rkvIh9I2C6JIAulJQ9VQHf6DR21DNaaQXlEvtI5x.jpeg'
+                />
+                <Image
+                  alt='...'
+                  src='https://saintmarysangels.edu.ph/storage/smac-files/ZYAmYodZcipoTeRXVxaYxYaQ1r2HdB5n6BfsN40W.jpeg'
+                />
+                <Image
+                  alt='...'
+                  src='https://saintmarysangels.edu.ph/storage/smac-files/HRbtkNwEGMWRlhIBJA3bx6APh3YLcenGbGwhxlKQ.jpeg'
+                />
+              </Carousel>
+            </div>
+          </div>
+        </section>
 
-            <ButtonLink className='mt-6' href='/components' variant='light'>
-              See all components
-            </ButtonLink>
-
-            <UnstyledLink
-              href='https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Ftheodorusclarence%2Fts-nextjs-tailwind-starter'
-              className='mt-4'
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                width='92'
-                height='32'
-                src='https://vercel.com/button'
-                alt='Deploy with Vercel'
-              />
-            </UnstyledLink>
-
-            <footer className='absolute bottom-2 text-gray-700'>
-              © {new Date().getFullYear()} By{' '}
-              <UnderlineLink href='https://theodorusclarence.com?ref=tsnextstarter'>
-                Theodorus Clarence
-              </UnderlineLink>
-            </footer>
+        <section className='bg-white'>
+          <div className='layout flex flex-col'>
+            <h3>Recent Events</h3>
+            <div className='mt-5 grid max-w-full grid-cols-1 gap-5 lg:grid-cols-3'>
+              {[1, 2, 3, 4, 5].map((i) => (
+                <Card
+                  key={i}
+                  imgAlt='Meaningful alt text for an image that is not purely decorative'
+                  imgSrc='https://flowbite.com/docs/images/blog/image-1.jpg'
+                >
+                  <h5 className='text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
+                    Noteworthy technology acquisitions 2021
+                  </h5>
+                  <p className='font-normal text-gray-700 dark:text-gray-400'>
+                    Here are the biggest enterprise technology acquisitions of
+                    2021 so far, in reverse chronological order.
+                  </p>
+                </Card>
+              ))}
+            </div>
           </div>
         </section>
       </main>
