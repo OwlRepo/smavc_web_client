@@ -9,7 +9,7 @@ const nextConfig = {
 
   // Uncoment to add domain whitelist
   images: {
-    domains: ['saintmarysangels.edu.ph'],
+    domains: ['saintmarysangels.edu.ph', 'scontent.fmnl17-5.fna.fbcdn.net'],
   },
 
   // SVGR

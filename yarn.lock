@@ -1428,6 +1428,11 @@
   dependencies:
     "@floating-ui/dom" "^1.1.0"
 
+"@hookform/error-message@^2.0.1":
+  "integrity" "sha512-U410sAr92xgxT1idlu9WWOVjndxLdgPUHEB8Schr27C9eh7/xUnITWpCMF93s+lGiG++D4JnbSnrb5A21AdSNg=="
+  "resolved" "https://registry.npmjs.org/@hookform/error-message/-/error-message-2.0.1.tgz"
+  "version" "2.0.1"
+
 "@humanwhocodes/config-array@^0.11.8":
   "integrity" "sha512-UybHIJzJnR5Qc/MsD9Kr+RpO2h+/P1GhOwdiLPXK5TWk5sgTdu88bTD9UP+CKbPPh5Rni1u0GjAdYQLemG8g+g=="
   "resolved" "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.11.8.tgz"
@@ -6137,7 +6142,7 @@
     "loose-envify" "^1.1.0"
     "scheduler" "^0.23.0"
 
-"react-hook-form@^7.42.1":
+"react-hook-form@^7.0.0", "react-hook-form@^7.42.1":
   "integrity" "sha512-2UIGqwMZksd5HS55crTT1ATLTr0rAI4jS7yVuqTaoRVDhY2Qc4IyjskCmpnmdYqUNOYFy04vW253tb2JRVh+IQ=="
   "resolved" "https://registry.npmjs.org/react-hook-form/-/react-hook-form-7.42.1.tgz"
   "version" "7.42.1"
