@@ -2,7 +2,6 @@ import { Card, Carousel } from 'flowbite-react';
 import * as React from 'react';
 
 import Layout from '@/components/layout/Layout';
-import NextImage from '@/components/NextImage';
 import Seo from '@/components/Seo';
 
 export default function HomePage() {
@@ -30,44 +29,29 @@ export default function HomePage() {
             </div>
             <div className='my-16 h-56 rounded sm:h-64 xl:h-80 2xl:h-96'>
               <Carousel className='rounded shadow-lg'>
-                <NextImage
+                <img
                   src='https://saintmarysangels.edu.ph/storage/smac-files/jIdPDnijIWCvErfuTrCzdZjpHNT5TRhgO1v36A9H.gif'
-                  useSkeleton
-                  className='mr-3 h-6 sm:h-9'
                   alt="Saint Mary's Angels College of Valenzuela"
-                  width='180'
-                  height='180'
+                  height='100%'
                 />
-                <NextImage
+                <img
                   src='https://saintmarysangels.edu.ph/storage/smac-files/j1y8Cs1jJNrqfWss7F11XXUeZ4QG9cMAIS8YdHDj.png'
-                  useSkeleton
-                  className='mr-3 h-6 sm:h-9'
                   alt="Saint Mary's Angels College of Valenzuela"
-                  width='180'
-                  height='180'
+                  height='100%'
                 />
-                <NextImage
-                  useSkeleton
-                  className='mr-3 h-6 sm:h-9'
+                <img
                   alt="Saint Mary's Angels College of Valenzuela"
-                  width='180'
-                  height='180'
+                  height='100%'
                   src='https://saintmarysangels.edu.ph/storage/smac-files/rkvIh9I2C6JIAulJQ9VQHf6DR21DNaaQXlEvtI5x.jpeg'
                 />
-                <NextImage
-                  useSkeleton
-                  className='mr-3 h-6 sm:h-9'
+                <img
                   alt="Saint Mary's Angels College of Valenzuela"
-                  width='180'
-                  height='180'
+                  height='100%'
                   src='https://saintmarysangels.edu.ph/storage/smac-files/ZYAmYodZcipoTeRXVxaYxYaQ1r2HdB5n6BfsN40W.jpeg'
                 />
-                <NextImage
-                  useSkeleton
-                  className='mr-3 h-6 sm:h-9'
+                <img
                   alt="Saint Mary's Angels College of Valenzuela"
-                  width='180'
-                  height='180'
+                  height='100%'
                   src='https://saintmarysangels.edu.ph/storage/smac-files/HRbtkNwEGMWRlhIBJA3bx6APh3YLcenGbGwhxlKQ.jpeg'
                 />
               </Carousel>
